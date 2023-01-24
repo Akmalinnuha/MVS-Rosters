@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#141629"
+    tools:context=".TazActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/tazdesc"
+                android:contentDescription="foto roster"/>
+
+        </FrameLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:id="@+id/taz1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textFontWeight="500"
+                    android:textStyle="italic"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="@string/info1"/>
+
+                <TextView
+                    android:id="@+id/taz2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textFontWeight="500"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textStyle="italic"
+                    android:paddingHorizontal="55dp"
+                    android:text="@string/info2"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:id="@+id/taz3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textFontWeight="500"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textStyle="italic"
+                    android:textColor="@color/white"
+                    android:text="@string/info3"/>
+            </TableRow>
+        </TableLayout>
+        <TextView
+            android:id="@+id/taz4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="25dp"
+            android:textFontWeight="500"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="italic"
+            android:textColor="#01e8ea"
+            android:text="@string/desc"/>
+        <TextView
+            android:id="@+id/taz5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="15dp"
+            android:paddingBottom="14dp"
+            android:textFontWeight="500"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="italic"
+            android:justificationMode="inter_word"
+            android:textColor="@color/white"
+            android:text="@string/tazdescription" />
+        <ToggleButton
+            android:id="@+id/toggle4"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:textOn=""
+            android:textOff=""
+            android:background="@drawable/toggle_selector"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/blank" />
+    </LinearLayout>
+</ScrollView>
