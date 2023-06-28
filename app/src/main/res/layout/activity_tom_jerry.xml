@@ -54,7 +54,7 @@
                     android:textFontWeight="500"
                     android:fontFamily="sans-serif-condensed"
                     android:textStyle="italic"
-                    android:paddingHorizontal="55dp"
+                    android:paddingHorizontal="35dp"
                     android:text="@string/info2"/>
             </TableRow>
 
